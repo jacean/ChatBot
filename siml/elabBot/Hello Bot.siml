@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Type="public" Name="Hello Bot">
+    <Model>
+      <Pattern>Hello Bot</Pattern>
+      <Response>Hello User!</Response>
+    </Model>
+
+  </Concept>
+</Siml>

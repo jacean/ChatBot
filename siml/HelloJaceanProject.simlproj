@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<simlproject>
+  <name>HelloJacean</name>
+  <directory>HelloJaceanProject</directory>
+  <botname>jacean</botname>
+  <personality>jacean_per</personality>
+  <author>jacean</author>
+  <description>jacean's bot</description>
+  <date>9:23:51, 2016年5月28日</date>
+  <notes></notes>
+</simlproject>

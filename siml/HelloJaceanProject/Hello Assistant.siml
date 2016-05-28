@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <!--Entry point for creating your Syn Web Assistant-->
+  <!--Note: You should NOT add any template to this Project. If you wish to use a base Template you should select the Template from you Syn Account.-->
+  <Concept Type="public" Name="Hello Assistant">
+    <Model>
+      <Pattern>HELLO ASSISTANT</Pattern>
+      <Response>Hello User!</Response>
+    </Model>
+        <Model>
+      <Pattern>
+            <Item>Hello</Item>
+      		<Item>Hello one</Item>
+      </Pattern>
+      <Response>Hello!I am jacean</Response>
+    </Model>
+    <Model>
+	  <Pattern>YES</Pattern>
+	  <Previous>Do you like %</Previous>
+	  <Response>That is just awesome!</Response>
+	</Model>
+	<Model>
+	  <Pattern>No</Pattern>
+	  <Previous>Do you like %</Previous>
+	  <Response>That is just pp!</Response>
+	</Model>
+    <Model>
+	  <Pattern>Hi</Pattern>
+	  <Response>Do you like Chatbots</Response>
+	</Model>
+  </Concept>
+</Siml>

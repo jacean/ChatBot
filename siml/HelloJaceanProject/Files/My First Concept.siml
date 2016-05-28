@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Siml>
+  <Concept Name="My First Concept">
+       <Model>
+      <Pattern>HOW ARE YOU</Pattern>
+      <Response>
+<Random Get="i-am-fine" />
+
+      </Response>
+    </Model>
+
+    <Model>
+      <Pattern>
+        <Item>WHAT IS YOUR NAME</Item>
+        <Item>WHAT CAN I CALL YOU</Item>
+      </Pattern>
+      <Response>
+        <Phrase>
+          <Item>My name is <Bot Get="Name" /></Item>
+          <Item>You can call me <Bot Get="Name" /></Item>
+        </Phrase>
+      </Response>
+    </Model>
+<Model>
+  <Pattern>HELLO JAVASCRIPT</Pattern>
+  <Response>
+     <Js>helloScript();</Js>
+  </Response>
+</Model>
+<Model>
+   <Pattern>I LIKE CHATBOTS *</Pattern>
+    <Response>
+       That's great that you like chatbots <Map Get="person2"><Match /></Map><BotEmotion ID="happy" />
+    </Response>
+</Model>
+
+
+  <Model>
+  <Pattern>WHAT IS A *</Pattern>
+  <Response>What do you think a <Match /> is?</Response>
+</Model>
+<Model>
+  <Pattern>Does * like *</Pattern>
+  <Response>Yes <Match /> likes <Match Index="2" /></Response>
+</Model>
+<Model>
+  <Pattern>{YOUR NAME}</Pattern>
+  <Response>My name is <Bot Get="Name" /></Response>
+</Model>
+<Model>
+  <Pattern>WHAT IS THE MEANING OF _</Pattern>
+  <Response>
+    <Goto>Define <Match /></Goto>
+  </Response>
+</Model>
+
+<Model>
+  <Pattern>WHAT IS THE MEANING OF *</Pattern>
+  <Response>I don't really know.</Response>
+</Model>
+
+<Model>
+  <Pattern>DEFINE LIFE</Pattern>
+  <Response>42</Response>
+</Model>
+<Model>
+  <Pattern>Switch it @switch</Pattern>
+  <Response>Switched <Match /></Response>
+</Model>
+<Model>
+  <Pattern>I like the color [Color]</Pattern>
+  <Response>I like <Match /> too</Response>
+</Model>
+<Model>
+   <Pattern>START APPLICATION</Pattern>
+   <Response>Are you sure ?</Response>
+   <Model>
+     <Pattern>Yes</Pattern>
+     <Response>Application started.</Response>
+   </Model>
+
+   <Model>
+     <Pattern>No</Pattern>
+     <Response>As you wish.</Response>
+   </Model>
+</Model>
+     <Model>
+      <Pattern>WHEN DO YOU SLEEP</Pattern>
+      <Response>I sleep at <Bot Get="sleep-time" />
+        <Think>
+          <Bot Set="sleep-time">12am</Bot>
+        </Think>
+      </Response>
+    </Model>
+<Model>
+  <Pattern>What is my middle name</Pattern>
+  <Response>It’s <User Get="middle-name" /></Response>
+</Model>
+<Model>
+  <Pattern>My name is *</Pattern>
+  <Response>Hi there! <User Set="Name"><Match /></User></Response>
+</Model>
+<Model>
+  <Pattern>BLA</Pattern>
+  <Response>What!</Response>
+</Model>
+<Model>
+  <Pattern>HOW ARE YOU</Pattern>
+  <Response>I am fine thank you.</Response>
+</Model>
+
+<Model>
+  <Pattern>ANYTHING NEW</Pattern>
+  <Response>Yes a lot has changed now.</Response>
+</Model>
+
+  </Concept>
+</Siml>
